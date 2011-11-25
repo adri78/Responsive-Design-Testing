@@ -29,6 +29,10 @@ function loadPage($frame, url) {
   $('iframe').not($frame).attr('src', url);
 }
 
+function refreshFrames() {
+	$('iframe')[0].contentWindow.location.reload();
+}
+
 $('.frame').each(function(){showLoader($(this).attr('id'))});  
 
 

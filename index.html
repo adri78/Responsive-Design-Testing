@@ -10,7 +10,7 @@
 		h2{margin:0 0 20px 0;}
 		span.small{font-size:60%;vertical-align:middle;}
 		#url{margin:0 0 20px 0px;display:block;}
-		#url input[type=text]{border:solid 1px #666;width:85%;margin:0 auto;font-size:2em;text-align:left;}
+		#url input[type=text]{border:solid 1px #666;width:84%;margin:0 auto;font-size:2em;text-align:left;}
 		#url input[type=submit]{display:none;}
 		#url #options{float:right;line-height:25px;width:13%;}
 		#url #options input{margin-top:5px;}
@@ -27,6 +27,7 @@
 <body id="container">
 	<div id="url">
 		<form method="post">
+			<a href="javascript:void(null)" onclick="refreshFrames()" style="float: left; margin-right:5px; margin-top: 5px;"><img src="http://refresh.jpg.to" title="Refresh" width="20" /></a>
 			<input type="text" placeholder="Test your own site... type the url and hit enter" />
 			<input type="submit" value="submit">
 			<div id="options">
@@ -57,6 +58,11 @@
 				<h2>1024<span> x 768</span> <span class="small">(iPad - Landscape)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
 				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="1039" height="768"></iframe>
 			</div>
+
+			<div id="f6" class="frame">
+				<h2>230<span> x 320</span> <span class="small">(check defaults)</span> <img src="http://mattkersley.com/wp-content/themes/mattkersley/images/loader_large.gif" /></h2>
+				<iframe sandbox="allow-same-origin allow-forms allow-scripts" seamless width="255" height="320"></iframe>
+			</div>                                                                                                                        
 		</div>
 	</div>
 	<span>A tool by <a href="http://mattkersley.com">Matt Kersley</a> - <a href="https://github.com/mattkersley/Responsive-Design-Testing">Fork it on Github</a></span><br />
